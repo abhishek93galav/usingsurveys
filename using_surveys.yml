@@ -1,4 +1,7 @@
-- hosts: serverf.lab.example.com 
+- hosts: serverf.lab.example.com
+  vars:
+    app_version: v1.0
+    app_user: abhi
   tasks:
     - name: use value of username variable
       debug:
