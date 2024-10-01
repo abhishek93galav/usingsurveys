@@ -1,0 +1,8 @@
+- hosts: serverf.lab.example.com 
+  tasks:
+    - name: use value of username variable
+      debug:
+        msg: "the value of username variable is {{ app_user }}"
+    - name: printing version of software
+      debug:
+        msg: "the version of app is {{ app_version }}"
